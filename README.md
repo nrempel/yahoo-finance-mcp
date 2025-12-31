@@ -1,5 +1,7 @@
 # Yahoo Finance MCP Server
 
+[![npm version](https://img.shields.io/npm/v/yfinance-mcp.svg)](https://www.npmjs.com/package/yfinance-mcp)
+
 A Model Context Protocol (MCP) server that provides access to Yahoo Finance data including stock quotes, historical prices, financial statements, company information, symbol search, and news.
 
 ## Installation
