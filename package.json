@@ -1,9 +1,27 @@
 {
-  "name": "yahoo-finance-mcp",
+  "name": "yfinance-mcp",
   "version": "1.0.0",
-  "description": "MCP server for Yahoo Finance data",
+  "description": "MCP server for Yahoo Finance data - stock quotes, historical prices, financials, company info, and news",
   "type": "module",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "yfinance-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrempel/yahoo-finance-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nrempel/yahoo-finance-mcp/issues"
+  },
+  "homepage": "https://github.com/nrempel/yahoo-finance-mcp#readme",
+  "author": "nrempel",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -21,9 +39,14 @@
   },
   "keywords": [
     "mcp",
+    "mcp-server",
+    "model-context-protocol",
     "yahoo-finance",
     "stocks",
-    "finance"
+    "finance",
+    "claude",
+    "ai",
+    "typescript"
   ],
   "license": "MIT",
   "dependencies": {
