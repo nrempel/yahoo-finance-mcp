@@ -1,5 +1,14 @@
 import yahooFinance from "yahoo-finance2";
 
+yahooFinance.setGlobalConfig({
+  logger: {
+    info: () => {},
+    warn: () => {},
+    error: () => {},
+    debug: () => {},
+  },
+});
+
 export interface ToolResult {
   [key: string]: unknown;
   content: { type: "text"; text: string }[];

@@ -25,6 +25,8 @@ vi.mock("yahoo-finance2", () => ({
     quoteSummary: mockQuoteSummary,
     search: mockSearch,
     fundamentalsTimeSeries: mockFundamentalsTimeSeries,
+    setGlobalConfig: vi.fn(),
+    suppressNotices: vi.fn(),
   },
 }));
 
