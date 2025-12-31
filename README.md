@@ -4,29 +4,22 @@ A Model Context Protocol (MCP) server that provides access to Yahoo Finance data
 
 ## Installation
 
-```bash
-pnpm install
-```
-
-## Configuration
-
 ### Claude Code
 
-Add the server to your Claude Code configuration:
-
 ```bash
-claude mcp add yahoo-finance npx tsx /path/to/yahoo-finance-mcp/src/index.ts
+claude mcp add yfinance-mcp -- npx yfinance-mcp
 ```
 
-Or manually add to `~/.claude.json`:
+### Claude Desktop
+
+Add to your `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "yahoo-finance": {
-      "type": "stdio",
+    "yfinance-mcp": {
       "command": "npx",
-      "args": ["tsx", "/path/to/yahoo-finance-mcp/src/index.ts"]
+      "args": ["yfinance-mcp"]
     }
   }
 }
